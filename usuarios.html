@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>PRACTICA 3</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script language="Javascript">
+function procesa(){
+var nombre,i,apaterno,amaterno,a=[],b=[];
+nombre=prompt("Escriba su nombre");
+apaterno=prompt("Escriba su Apellido paterno");
+amaterno=prompt("Escriba su Apellido materno");
+a[0]=nombre;
+a[1]=apaterno;
+a[2]=amaterno;
+alert(a[0]);
+alert(a[1]);
+alert(a[2]);
+alert(a);
+alert(a.join("_"));
+b=a.join("");
+alert(b);
+for(i=0;i<a.length;i++){
+document.write("<br>");
+document.write(a[i]);
+}
+}
+</script>
+</head>
+<body>
+	<header>
+			<h1>UNIVERSIDAD ICEL, UI</h1>
+			<h2>NEGOCIOS ELECTRONICOS</h2>
+			<h4>PROF. MARTINEZ MORALES JOSE</h4>
+			<h4>ALUMNO: HERNANDEZ MUÑOZ LUIS JORGE</h4>
+			<h4>PRACTICA 4</h4>
+	</header>
+	
+	<div id="opciones">
+		<h2>EJERCICIO 9 - PRACTICA 4</h2>
+<FORM>
+<INPUT TYPE="BUTTON" VALUE="Procesamiento" onclick="procesa()">
+</FORM>
+	</div>
+
+			<div id="opciones">
+			<h2>ELIGE UNA OPCIÓN</h2>
+
+<a href="index.html">OPCIONES</a>
+	</div>
+
+	<footer>
+		Creado por: Luis Hernández &copy;
+	</footer>
+
+</body>
+</html>

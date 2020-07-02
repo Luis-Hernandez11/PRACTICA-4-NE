@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>PRACTICA 4</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script language="Javascript">
+
+function potencia2(num){
+var base,i,n,f=[];
+base=num;
+n=prompt("Dame la potencia","n");
+
+if(n==0){
+f[0]=1;
+//alert("potencias: " + f);
+}
+
+if(n==1){
+f[0]=1;
+f[1]=2;
+//alert("potencias: " + f);
+}
+
+if(n>1){
+f[0]=1;
+f[1]=base;
+for(i=1;i<n;i++){
+f[i+1]=f[i]*base;
+}
+}
+
+document.write("\n");
+document.write("\n" + f);
+
+}
+
+</script>
+</head>
+<body>
+	<header>
+			<h1>UNIVERSIDAD ICEL, UI</h1>
+			<h2>NEGOCIOS ELECTRONICOS</h2>
+			<h4>PROF. MARTINEZ MORALES JOSE</h4>
+			<h4>ALUMNO: HERNANDEZ MUÑOZ LUIS JORGE</h4>
+			<h4>PRACTICA 4</h4>
+	</header>
+
+        <div id="opciones">
+            <h4>EJERCICIO 11 - PRACTICA 4</h4>
+
+            <FORM>
+<INPUT TYPE="BUTTON" VALUE="Potencias base 2" onClick="potencia2(2)">
+<INPUT TYPE="BUTTON" VALUE="Potencias base -1" onClick="potencia2(-1)">
+<INPUT TYPE="BUTTON" VALUE="Potencias base pi" onClick="potencia2(3.1416)">
+<INPUT TYPE="BUTTON" VALUE="Potencias base e" onClick="potencia2(2.718281)">
+</FORM>
+</div>
+
+		<div id="opciones">
+			<h2>ELIGE UNA OPCIÓN</h2>
+
+<a href="index.html">OPCIONES</a>
+	</div>
+
+	<footer>
+		Creado por: Luis Hernández &copy;
+	</footer>
+
+</body>
+</html>
